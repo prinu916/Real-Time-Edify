@@ -1,0 +1,11 @@
+.git
+.gitignore
+.env.local
+.env.*.local
+node_modules
+npm-debug.log
+src/client/node_modules
+src/node_modules
+.DS_Store
+*.swp
+*.swo

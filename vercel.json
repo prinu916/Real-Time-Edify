@@ -1,5 +1,15 @@
 {
   "buildCommand": "cd src && npm run build",
   "outputDirectory": "src",
-  "installCommand": "npm install"
+  "installCommand": "cd src && npm install",
+  "env": {
+    "MONGODB_URI": "@mongodb_uri",
+    "JWT_SECRET": "@jwt_secret"
+  },
+  "functions": {
+    "src/server.js": {
+      "maxDuration": 60,
+      "memory": 512
+    }
+  }
 }
